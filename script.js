@@ -1,4 +1,4 @@
-let display = document.getElementById('screen');
+let display = document.querySelector('#screen');
 function allclear(){
     display.value="";
 }
@@ -7,4 +7,7 @@ function show(n){
 }
 function calc(){
     display.value = eval(display.value);
+}
+function del(){
+    display.value = display.value.slice(0 ,-1);
 }
